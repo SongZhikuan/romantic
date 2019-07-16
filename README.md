@@ -1,7 +1,7 @@
 # 程序员的浪漫
 
 ## 示例网页
-[http://thinkhard.tech/romantic_page/](http://thinkhard.tech/romantic_page/)
+[https://songzhikuan.github.io/romantic/](https://songzhikuan.github.io/romantic/)
 
 ## 效果图
 
