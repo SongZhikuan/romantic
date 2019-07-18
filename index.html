@@ -19,12 +19,19 @@
         @media screen and (max-width: 992px) {
             body {
                 background-image: url('mobileBg.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
             }
         }
 
         h2 {
             font-size: 220%;
             font-weight: 400;
+        }
+        @media screen and (max-width: 992px) {
+            h2 {
+                font-size: 180%;
+            }
         }
 
         .content {
@@ -40,7 +47,12 @@
             line-height: 1.5;
             margin: 1em 0;
         }
-
+        @media screen and (max-width: 992px) {
+            .timer {
+                font-size: 140%;
+                padding: 0 8%;
+            }
+        }
         .timer b {
             color: rgb(253, 99, 125);
         }
