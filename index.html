@@ -7,27 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>恋爱计时器</title>
+    <title>志宽❤思齐</title>
     <style>
+        html ,body, .content{
+            height: 100%;
+        }
         body {
             -webkit-font-smoothing: antialiased;
             font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-            background-image: url('bg.jpg');
+            background-image: url('./source/bg.jpg');
             font-size: 85%;
             margin: 0;
+        }
+        @media screen and (max-width: 992px) {
+            body {
+                background-image: url('./source/mobileBg.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
         }
 
         h2 {
             font-size: 220%;
             font-weight: 400;
         }
+        @media screen and (max-width: 992px) {
+            h2 {
+                font-size: 180%;
+            }
+        }
 
         .content {
-            position: absolute;
+            /*position: absolute;*/
+            position: relative;
             width: 100%;
-            top: 40%;
+            height: 100%;
+            padding-top: 20%;
             transform: translate(0, -50%);
             text-align: center;
+        }
+        .know {
+            margin-top: 0;
+            z-index: 1000;
         }
 
         .timer {
@@ -35,7 +56,18 @@
             line-height: 1.5;
             margin: 1em 0;
         }
-
+        .love {
+            margin-top: 30%;
+        }
+        .love img{
+            height: 282px;
+        }
+        @media screen and (max-width: 992px) {
+            .timer {
+                font-size: 140%;
+                padding: 0 8%;
+            }
+        }
         .timer b {
             color: rgb(253, 99, 125);
         }
@@ -44,10 +76,20 @@
 
 <body>
     <div class="content">
-        <h2>思齐，我们已经认识了</h2>
-        <div class="timer">
-            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+        <div class="know">
+            <h2>我们相识</h2>
+            <!--<h2>思齐，我们已经认识了</h2>-->
+            <div class="timer">
+                <b id="d"></b> D <b id="h"></b> H <b id="m"></b> M <b id="s"></b> S
+                <!--<b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds-->
+            </div>
         </div>
+        <!--<div class="love">-->
+            <!--<h2>7月27，我们<span style="color: red">❤</span></h2>-->
+            <!--<div>-->
+                <!--&lt;!&ndash;<img src="./source/f1ed18781f31c3fb1bcf958e32ce72be.png" alt="恋爱" />&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
 
     <script>
