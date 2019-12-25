@@ -29,7 +29,7 @@
             /*position: absolute;*/
             position: relative;
             width: 100%;
-            padding-top: 20%;
+            padding-top: 15%;
             /*transform: translate(0, -50%);*/
             text-align: center;
         }
@@ -57,7 +57,9 @@
         .line {
             border-bottom: 1px dashed white;
         }
-
+        .dd img {
+            display: none;
+        }
         @media screen and (max-width: 992px) {
             body {
                 background-image: url('./source/mobileBg.jpg');
@@ -65,6 +67,7 @@
                 background-repeat: no-repeat;
             }
             .content {
+                padding-top: 20%;
                 text-align: left;
             }
             .know {
@@ -90,6 +93,29 @@
             .ec {
                 font-size: 140%;
             }
+            .dd img {
+                display: initial;
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 2vh;
+                right: 2vw;
+                animation: cycle 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes cycle {
+                from {
+                    transform: rotateZ(0deg);
+                    -webkit-transform: rotateZ(0deg);
+                }
+                to {
+                    transform: rotateZ(360deg);
+                    -webkit-transform: rotateZ(360deg);
+                }
+            }
         }
     </style>
 </head>
@@ -114,6 +140,11 @@
             <div>
 <!--                <img src="./source/f1ed18781f31c3fb1bcf958e32ce72be.png" alt="恋爱" />-->
             </div>
+        </div>
+        <div class="dd">
+            <img src="./source/dd.jpg" alt="">
+            <!--<img src="./source/mmexport1577287146820.jpg" alt="">-->
+            <!--<img src="./source/wx_camera_1575981408588.jpg" alt="">-->
         </div>
     </div>
 
